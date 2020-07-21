@@ -14,6 +14,7 @@
 		26CD391224C6CCA700525308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CD391124C6CCA700525308 /* Assets.xcassets */; };
 		26CD391524C6CCA700525308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CD391324C6CCA700525308 /* LaunchScreen.storyboard */; };
 		26CD391824C6CCA700525308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CD391724C6CCA700525308 /* main.m */; };
+		B871DB09255FFCCF8ED68C5E /* Pods_MLText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300EFAB2E37C56551CFB0D1 /* Pods_MLText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		26CD391424C6CCA700525308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26CD391624C6CCA700525308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26CD391724C6CCA700525308 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3300EFAB2E37C56551CFB0D1 /* Pods_MLText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AB92FE89D3820055599D5E /* Pods-MLText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLText.debug.xcconfig"; path = "Target Support Files/Pods-MLText/Pods-MLText.debug.xcconfig"; sourceTree = "<group>"; };
+		897E70BDC95EE00E83A1BBF8 /* Pods-MLText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLText.release.xcconfig"; path = "Target Support Files/Pods-MLText/Pods-MLText.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B871DB09255FFCCF8ED68C5E /* Pods_MLText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				26CD390424C6CCA400525308 /* MLText */,
 				26CD390324C6CCA400525308 /* Products */,
+				ABF7959CF77B57233B0F46C9 /* Pods */,
+				76D4900F4414BF7E79329065 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = MLText;
 			sourceTree = "<group>";
 		};
+		76D4900F4414BF7E79329065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3300EFAB2E37C56551CFB0D1 /* Pods_MLText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF7959CF77B57233B0F46C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66AB92FE89D3820055599D5E /* Pods-MLText.debug.xcconfig */,
+				897E70BDC95EE00E83A1BBF8 /* Pods-MLText.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26CD391B24C6CCA700525308 /* Build configuration list for PBXNativeTarget "MLText" */;
 			buildPhases = (
+				A69191FFB0AA7B991F28B709 /* [CP] Check Pods Manifest.lock */,
 				26CD38FE24C6CCA400525308 /* Sources */,
 				26CD38FF24C6CCA400525308 /* Frameworks */,
 				26CD390024C6CCA400525308 /* Resources */,
+				12A0DBC47B8A5D0960BF3C0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12A0DBC47B8A5D0960BF3C0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLText/Pods-MLText-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLText/Pods-MLText-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLText/Pods-MLText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69191FFB0AA7B991F28B709 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26CD38FE24C6CCA400525308 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		26CD391C24C6CCA700525308 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AB92FE89D3820055599D5E /* Pods-MLText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		26CD391D24C6CCA700525308 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897E70BDC95EE00E83A1BBF8 /* Pods-MLText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
